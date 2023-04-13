@@ -2914,6 +2914,18 @@ Tab:AddToggle({
 	    end
 	end
 })
+Tab:AddButton({
+	Name = "键盘",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+  	end
+})
+Tab:AddButton({
+	Name = "鼠标",
+	Callback = function()
+	loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
+  	end
+})
 local Section = Tab:AddSection({
 	Name = "物品"
 })
