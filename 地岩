@@ -48,7 +48,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("脚本仅供娱乐","脚本绝不公布")
 
-Tab:AddParagraph("更新","更新通用脚本阿尔宙斯注入器")
+Tab:AddParagraph("更新","更新doors十字架成就")
 
 Tab:AddParagraph("作者QQ","756180684")
 
@@ -2933,36 +2933,222 @@ Tab:AddButton({
 	Name = "万圣节十字架",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/Ge4kGwrG"))()
+local Details = {
+    Description = "我不该出现在这里",
+    Title = "万圣节十字架",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
 	Name = "圣诞节十字架",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bbamxbbamxbbamx/codespaces-blank/main/%E5%8D%81%E5%AD%97%E6%9E%B6"))()
+local Details = {
+    Description = "这可真是个好地方",
+    Title = "圣诞节十字架",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
 	Name = "figure十字架",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/xiFQRinF"))()
+local Details = {
+    Description = "这是哪里",
+    Title = "figure十字架",
+    Reason =  "我不因该在等待着你吗?"
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
 	Name = "紫色十字架",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bbamxbbamxbbamx/codespaces-blank/main/%E5%8D%81%E5%AD%97%E6%9E%B61"))()
+local Details = {
+    Description = "期待我吗?",
+    Title = "未知十字架",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
 	Name = "钻石剑十字架",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/i0EybPVL"))()
+local Details = {
+    Description = "我的世界?",
+    Title = "钻石剑十字架",
+    Reason =  "我不记得我有和它联动"
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
 	Name = "黑色十字架",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/DwDiTgX8"))()
+local Details = {
+    Description = "恐惧我吧",
+    Title = "杰夫十字架",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
@@ -3320,6 +3506,37 @@ dupeCrucifix.Event:Connect(function(time, entityRoot)
     task.wait(0.5)
     Cross:Remove()
 end)
+local Details = {
+    Description = "你放开我!!!",
+    Title = "screech十字架",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 Tab:AddButton({
@@ -3683,12 +3900,44 @@ Tab:AddButton({
 	Name = "给予夜视仪",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bbamxbbamxbbamx/codespaces-blank/main/%E5%A4%9C%E8%A7%86%E4%BB%AA"))()
+
   	end
 })
 Tab:AddButton({
 	Name = "拆家剪刀",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+local Details = {
+    Description = "我可不是一般的剪刀",
+    Title = "剪刀",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
   	end
 })
 local Section = Tab:AddSection({
