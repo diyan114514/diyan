@@ -42,13 +42,13 @@ local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shle
 local Window = OrionLib:MakeWindow({Name = "地岩", HidePremium = false, SaveConfig = false, IntroText = "地岩", ConfigFolder = "地岩"})
 local Tab = Window:MakeTab({
 	Name = "介绍",
-	Icon = "rbxassetid://7734068321",
+	Icon = "rbxassetid://4370345144",
 	PremiumOnly = false
 })
 
 Tab:AddParagraph("脚本仅供娱乐","脚本绝不公布")
 
-Tab:AddParagraph("更新","更新doors十字架成就")
+Tab:AddParagraph("更新","更新ui界面")
 
 Tab:AddParagraph("作者QQ","756180684")
 
@@ -1816,7 +1816,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "doors",
-	Icon = "rbxassetid://7734068321",
+	Icon = "rbxassetid://10722835155",
 	PremiumOnly = false
 })
 
@@ -2932,6 +2932,30 @@ mt.__namecall = newcclosure(function(remote,...)
 end)
 setreadonly(mt,true)
   	end
+})
+Tab:AddToggle({
+    Name="开启跳跃",
+     CurrentValue = false,
+    Callback=function()
+            con=game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+                if gameProcessed then return end
+                if input.KeyCode==Enum.KeyCode.Space then
+                    isJumping=true
+                    repeat 
+                        task.wait()
+                        if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid"):GetState()==Enum.HumanoidStateType.Freefall then else
+                        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):ChangeState(3) end
+                    until isJumping==false
+                end
+            end)
+
+            con2=game:GetService("UserInputService").InputEnded:Connect(function(input, gameProcessed)
+                if gameProcessed then return end
+                if input.KeyCode==Enum.KeyCode.Space then
+                    isJumping=false
+                end
+            end)
+    end
 })
 Tab:AddButton({
 	Name = "键盘",
