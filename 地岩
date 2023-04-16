@@ -4486,13 +4486,35 @@ Tab:AddButton({
     Name = "MC房间",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/y2WmccLk"))()
-    end,
+    end
 })
 Tab:AddButton({
     Name = "洞穴风格",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/Floor%202%20Mod"))()
-    end,
+    end
+})
+Tab:AddButton({
+    Name = "商店夜视仪",
+    Callback = function()
+        local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
+local CustomShop = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Shop%20Items/Source.lua"))()
+
+
+-- Create your tool here
+local exampleTool = LoadCustomInstance("rbxassetid://11397433017")
+
+
+-- Create custom shop item
+CustomShop.CreateItem(exampleTool, {
+    Title = "夜视仪",
+    Desc = "会员专享",
+    Image = "",
+    Price = 1000,
+    Stack = 1,
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+})
+    end
 })
 Tab:AddTextbox({
 	Name = "设置门的文字",
