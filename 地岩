@@ -1727,7 +1727,7 @@ end
 CloneChar.Parent = fldr
 CloneChar.HumanoidRootPart.CFrame = DeadChar.HumanoidRootPart.CFrame
 CloneChar.Humanoid.BreakJointsOnDeath = false
-CloneChar.Name = "non"
+CloneChar.Name = "史蒂夫"
 CloneChar.Humanoid.DisplayDistanceType = "None"
 
 for _,v in next, DeadChar:GetChildren() do
