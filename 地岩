@@ -1630,6 +1630,18 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Duration = 16;
 wait(1)
 HumanDied = false
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("MeshPart") then
+        v.Transparency = 1
+    end
+    if v:IsA("Part") then
+        v.Transparency = 1
+    end
+    if v:IsA("Accessory") then
+        v:Destroy()
+    end
+    game.Players.LocalPlayer.Character.Head.face.Transparency = 1
+end
 local CountSCIFIMOVIELOL = 1
 function SCIFIMOVIELOL(Part0,Part1,Position,Angle)
 	local AlignPos = Instance.new('AlignPosition', Part1); AlignPos.Name = "AliP_"..CountSCIFIMOVIELOL
@@ -2637,6 +2649,7 @@ if player then
 		end
 	end
 end
+
   	end
 })
 Tab:AddButton({
