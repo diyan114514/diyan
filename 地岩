@@ -34,7 +34,7 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("当前游戏ID为:" .. game.GameId .. ".")
+	FpsLabel.Text = ("当前注入器:"..identifyexecutor"()")
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
@@ -48,7 +48,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("脚本仅供娱乐","脚本绝不公布")
 
-Tab:AddParagraph("更新","更新监狱人生变身史蒂夫，可能这是我最后的更新了")
+Tab:AddParagraph("更新","更新ui")
 
 Tab:AddParagraph("作者QQ","756180684")
 
