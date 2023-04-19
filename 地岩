@@ -7302,9 +7302,9 @@ char.Humanoid.Died:connect(function()
 	end)
 end)
 
-inform("Prison Life v2.0.2 Grab Knife Loaded | e = Kill /\ q = Fix Knife",3)
+inform("此刀仅可绑架",3)
 wait(3.2)
-inform("Made By ASADCATONVERM :D", 2)
+inform("地岩流批", 2)
   	end
 })
 Tab:AddButton({
