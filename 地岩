@@ -2672,7 +2672,6 @@ end)
 wait()
 end
 end
-end)
   	end
 })
 Tab:AddButton({
@@ -5414,6 +5413,12 @@ AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, tru
 wait(0.5);
 AchievementsHolder:Destroy();
   	end
+})
+Tab:AddButton({
+	Name = "吸铁石",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+end
 })
 local Section = Tab:AddSection({
 	Name = "怪物"
