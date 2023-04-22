@@ -2672,6 +2672,7 @@ end)
 wait()
 end
 end
+end)
   	end
 })
 Tab:AddButton({
@@ -4920,22 +4921,12 @@ dupeCrucifix.Event:Connect(function(time, entityRoot)
     -- you tell me i didnt make?
     fakeCross.CFrame = CFrame.lookAt(CrucifixTool.Handle.Position, entityRoot.Position)
     
-    -- hl.Parent = model
-    -- hl.FillTransparency = 1
-    -- hl.OutlineColor = Color3.fromRGB(75, 177, 255)
+
     fakeCross.Anchored = true
 
     CrucifixTool:Destroy()
 
-    -- for i, v in pairs(fakeCross:GetChildren()) do
-    --     if v.Name == "E" and v:IsA("BasePart") then
-    --         v.Transparency = 0
-    --         v.CanCollide = false
-    --     end
-    --     if v:IsA("Motor6D") then
-    --         v.Name = "Motor6D"
-    --     end
-    -- end
+    
 
     task.wait(time)
     fakeCross.Anchored = false
@@ -7814,23 +7805,7 @@ end)
 Tab:AddButton({
 	Name = "阿尔宙斯",
 	Callback = function()
-	--[=[
-
-    ___      _  _     __     _         _         ____   
-  ,"___".   FJ  L]    FJ    FJ        FJ        [__  '. 
-  FJ---L]  J |__| L  J  L  J |       J |        `--7 .' 
- J |   LJ  |  __  |  |  |  | |       | |         .'.'.' 
- | \___--. F L__J J  F  J  F L_____  F L_____  .' (_(__ 
- J\_____/FJ__L  J__LJ____LJ________LJ________LJ________L
-  J_____F |__L  J__||____||________||________||________|
-                                                        
- 
-]=]
-
---Huge thanks for Bread for good textbox and remake the sliders :D
---GuiToLua By Creator of Backdoor.exe
-
--- Arceus X v3 Remake
+	
 local AZY = {};
 
 -- StarterGui.ArceusXV3
@@ -11558,54 +11533,7 @@ AZY_MODULES[AZY["132"]] = {
 AZY_MODULES[AZY["133"]] = {
 	Closure = function()
 		local script = AZY["133"];
---[[
 
-	Lexical scanner for creating a sequence of tokens from Lua source code.
-
-	This is a heavily modified and Roblox-optimized version of
-	the original Penlight Lexer module:
-		https://github.com/stevedonovan/Penlight
-
-	Authors:
-		stevedonovan <https://github.com/stevedonovan> ----------------- Original Penlight lexer author
-		ryanjmulder  <https://github.com/ryanjmulder>  ----------------- Penlight lexer contributer
-		mpeterv      <https://github.com/mpeterv>      ----------------- Penlight lexer contributer
-		Tieske       <https://github.com/Tieske>       ----------------- Penlight lexer contributer
-		boatbomber   <https://github.com/boatbomber>   ----------------- Roblox port, optimizations, and bug fixes
-		Sleitnick    <https://github.com/Sleitnick>    ----------------- Roblox optimizations
-
-	Usage:
-
-		local source = "for i = 1,n do end"
-		
-		-- The 'scan' function returns a token iterator:
-		for token,src in lexer.scan(source) do
-			print(token, src)
-		end
-
-			> keyword for
-			> iden    i
-			> =       =
-			> number  1
-			> ,       ,
-			> iden    n
-			> keyword do
-			> keyword end
-
-	List of tokens:
-		- keyword
-		- builtin
-		- iden
-		- string
-		- number
-		- space
-		- comment
-
-	Other tokens that don't fall into the above categories
-	will simply be returned as itself. For instance, operators
-	like "+" will simply return "+" as the token.
-
---]]
 
 		local lexer = {}
 
