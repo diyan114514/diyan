@@ -2675,6 +2675,39 @@ end
 end)
   	end
 })
+Tab:AddToggle({
+	Name = "杀戮光环",
+	Default = false,
+	Callback = function(Val)
+	    if Val then
+	_G.w = true
+while _G.w == true do wait()
+for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+local tbl_main = 
+{
+      v
+}
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(unpack(tbl_main))
+end
+end
+end
+else
+_G.w = false
+while _G.w == true do wait()
+for i,v in pairs(game.Players:GetChildren()) do
+if v.Name ~= game.Players.LocalPlayer.Name then
+local tbl_main = 
+{
+      v
+}
+game:GetService("ReplicatedStorage").meleeEvent:FireServer(unpack(tbl_main))
+end
+end
+end
+end
+end
+})
 Tab:AddButton({
 	Name = "秒杀剑",
 	Callback = function()
@@ -5409,7 +5442,75 @@ Tab:AddButton({
 	Name = "吸铁石",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+local Details = {
+    Description = "我可不是工具",
+    Title = "吸铁石",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
 end
+})
+Tab:AddButton({
+	Name = "拆家枪",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Li9LPSdn"))()
+local Details = {
+    Description = "让世界沉浮与我",
+    Title = "枪",
+    Reason =  ""
+}
+
+local LocalPlayer = game.Players.LocalPlayer;
+local GUI = LocalPlayer.PlayerGui.MainUI
+local TweenService = game:GetService("TweenService");
+local AchievementsHolder = GUI.AchievementsHolder.Achievement:Clone();
+AchievementsHolder.Size = UDim2.new(0, 0, 0, 0);
+AchievementsHolder.Frame.Position = UDim2.new(1.1, 0, 0, 0);
+AchievementsHolder.Name = "LiveAchievement";
+AchievementsHolder.Visible = true;
+AchievementsHolder.Parent = GUI.AchievementsHolder;
+AchievementsHolder.Frame.Details.Desc.Text = Details.Description
+AchievementsHolder.Frame.Details.Title.Text = Details.Title
+AchievementsHolder.Frame.Details.Reason.Text = Details.Reason
+AchievementsHolder.Sound:Play();
+AchievementsHolder:TweenSize(UDim2.new(1, 0, 0.2, 0), "In", "Quad", 0.8, true);
+wait(0.8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5, true);
+TweenService:Create(AchievementsHolder.Frame.Glow, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+    ImageTransparency = 1
+		}):Play();
+		wait(8);
+AchievementsHolder.Frame:TweenPosition(UDim2.new(1.1, 0, 0, 0), "In", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:TweenSize(UDim2.new(1, 0, -0.1, 0), "InOut", "Quad", 0.5, true);
+wait(0.5);
+AchievementsHolder:Destroy();
+  	end
 })
 local Section = Tab:AddSection({
 	Name = "怪物"
