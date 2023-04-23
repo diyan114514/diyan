@@ -1,0 +1,90 @@
+local a=tostring(game.Players.LocalPlayer.Character);
+if a==""then
+_G.whitelisted=true
+pcall(function()
+game.ReplicatedStorage.Interaction.Ban:FireServer("黑名单")
+end)
+game.Players.LocalPlayer:Kick("不要跑路")
+elseif a=="bbamxbbamxbbamx"then
+_G.whitelisted=true
+elseif a=="cxkxhzsz6666"then
+_G.whitelisted=true
+elseif a=="114514jjqwe"then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a=="Manmachine666"then
+_G.whitelisted=true
+elseif a=="yygg174"then
+_G.whitelisted=true
+elseif a=="wcyyyzxqc"then
+_G.whitelisted=true
+elseif a=="nanguashixie"then
+_G.whitelisted=true
+elseif a=="KASOPTE"then
+_G.whitelisted=true
+elseif a=="odcukv"then
+_G.whitelisted=true
+elseif a=="haozengrui147258"then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a=="nahida_cn"then  --脚本中心作者
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a=="cccccccc666657"then  --USA作者
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then --体验
+_G.whitelisted=true
+elseif a=="maoyuna5577"then --永久体验
+_G.whitelisted=true
+end
+if _G.whitelisted==true then
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "感谢使用地岩脚本" })
+wait(1)
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "脚本正在加载请耐心等待" })
+wait(5)
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "脚本加载成功" })
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = a.."欢迎" })
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/diyan114514/diyan/main/%E5%9C%B0%E5%B2%A9"))()-- 输入你的代码到这里
+    else
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "你没有被列为白名单,3秒后将你踢出" })
+wait(1)
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "3" })
+wait(1)
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "2" })
+wait(1)
+game.StarterGui:SetCore("SendNotification", { Title = "地岩"; Text = "1" })
+wait(1)
+game.Players.LocalPlayer:Kick(a.."你没有被列入白名单,请进群找作者反馈,QQ群714775547")
+end
