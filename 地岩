@@ -38,7 +38,7 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/diyan114514/diyan/main/ui"))()
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/48q2UWdd"))()
 local Window = OrionLib:MakeWindow({Name = "地岩", HidePremium = false, SaveConfig = false, IntroText = "地岩", ConfigFolder = "地岩"})
 local Tab = Window:MakeTab({
 	Name = "介绍",
